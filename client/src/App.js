@@ -178,7 +178,7 @@ class App extends Component {
                   root: classes.inputRoot,
                   input: classes.inputInput,
                 }}
-                //inputProps={{ 'aria-label': 'search' }}
+                inputProps={{ 'aria-label': 'search' }}
                 name="searchKeyword"
                 value={this.state.searchKeyword}
                 onChange={this.handleValueChange}
@@ -193,7 +193,7 @@ class App extends Component {
           <Table className={classes.table}>
               <TableHead>
                 <TableRow>
-                  {cellList.map(c => {
+                  {cellList.map((c) => {
                     return <TableCell className={classes.tableHead}>{c}</TableCell>
                   })}
                 </TableRow>
